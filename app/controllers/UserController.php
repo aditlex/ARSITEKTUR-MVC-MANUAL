@@ -18,7 +18,7 @@ class UserController
             'name' => 'John Doe',
             'username' => 'johndoe',
             'email' => 'john@example.com',
-            'avatar' => 'https://via.placeholder.com/120',
+            'avatar' => 'https://i.pravatar.cc/150?u=' . $id,
             'bio' => "Saya seorang web developer yang suka membangun aplikasi yang bersih dan efisien.",
             'created_at' => '2024-01-15',
             'last_login' => '2025-02-09 10:30:00'
