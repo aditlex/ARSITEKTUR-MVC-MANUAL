@@ -6,9 +6,13 @@ use App\View;
 
 class UserController
 {
-    public function show(int $id)
+    // Ubah (int $id) menjadi (array $params)
+    public function show(array $params)
     {
-        // Dalam aplikasi nyata, Anda akan mengambil ini dari database
+        // Ambil ID dari dalam array params
+        $id = $params['id'] ?? 0;
+
+        // Mock data user
         $user = [
             'id' => $id,
             'name' => 'John Doe',
@@ -31,7 +35,6 @@ class UserController
 
     public function list()
     {
-        // Mock user list
         $users = [
             ['id' => 1, 'name' => 'John Doe', 'email' => 'john@example.com'],
             ['id' => 2, 'name' => 'Jane Smith', 'email' => 'jane@example.com'],
